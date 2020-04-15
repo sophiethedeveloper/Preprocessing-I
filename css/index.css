@@ -163,6 +163,16 @@ body {
   background-color: #61D0D4;
   font-size: 1.5rem;
 }
+.project-circles {
+  padding: 3rem;
+  border-radius: 50%;
+  color: #ffffff;
+  margin: 2rem;
+  font-weight: bold;
+  background-color: #D1C926;
+  font-size: 1.5rem;
+  text-align: center;
+}
 hr {
   border: 0;
   height: 1px;
@@ -365,6 +375,54 @@ section .resume-skills .Skills-list .skill-icon {
 }
 section .resume-skills .Skills-list h5 {
   font-size: 1.8rem;
+}
+.project-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.project-section .project-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.project-section .project-title h2 {
+  font-size: 6rem;
+  color: #4D4D4D;
+}
+.project-section .project-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.project-section .project-list .project-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.project-section .project-list .project-display .project-img img {
+  width: 50rem;
+  margin: 2rem;
+}
+.project-section .project-list .project-display .project-description {
+  width: 20%;
+}
+.project-section .project-list .project-display .project-description h3 {
+  padding: 3rem;
+  border-radius: 50%;
+  color: #ffffff;
+  margin: 2rem;
+  font-weight: bold;
+  background-color: #D1C926;
+  font-size: 1.5rem;
+  text-align: center;
+  width: 20rem;
+}
+.project-section .project-list .project-display .project-description p {
+  font-size: 1.8rem;
+  color: #4D4D4D;
 }
 .contact-page {
   display: flex;

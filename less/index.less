@@ -97,6 +97,18 @@ html, body {
 	font-size: 1.5rem;
 }
 
+.project-circles {
+	padding: 3rem;
+	border-radius: 50%;
+	color: #ffffff;
+	margin: 2rem;
+	font-weight: bold;
+	background-color: @yellow;
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+
 hr {
 	border: 0;
 	height: 1px;
@@ -327,6 +339,77 @@ section {
 	}
 }
 
+// Project section
+
+.project-section {
+	.resume-flex();
+	flex-direction: column;
+
+	.project-title {
+		.resume-flex();
+		width: 100%;
+		h2 {
+			font-size: 6rem;
+			color: @headingColor;
+		}
+	}
+
+	.project-list {
+		.flex();
+		flex-direction: column;
+		width: 100%;
+
+		.project-display {
+			.resume-flex();
+			
+			.project-img {
+			
+				img {
+					width: 50rem;
+					margin: 2rem;
+				}
+			}
+
+			.project-description {
+				width: 20%;
+				h3 {
+					.project-circles();	
+					width: 20rem;
+				}
+				p {
+					font-size: 1.8rem;
+					color: @headingColor;
+				}
+			}
+		}
+
+		
+		
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Contact Section
 
 .contact-page {
@@ -406,21 +489,6 @@ section {
 	}
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // footer code
 footer {
 	background-color: @magenta;
