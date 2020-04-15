@@ -133,4 +133,253 @@ table {
 html,
 body {
   height: 100%;
+  font-size: 62.5%;
+  background-color: #F2EBEC;
+}
+.flex {
+  display: flex;
+}
+.resume-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.headingFont {
+  font-family: 'Pacifico', cursive;
+}
+.middle-circles {
+  padding: 4rem;
+  border-radius: 50%;
+  color: #ffffff;
+  margin: 1rem;
+  font-weight: bold;
+}
+.resume-circles {
+  padding: 5rem;
+  border-radius: 50%;
+  color: #ffffff;
+  margin: 2rem;
+  font-weight: bold;
+  background-color: #61D0D4;
+  font-size: 1.5rem;
+}
+hr {
+  border: 0;
+  height: 1px;
+  width: 80rem;
+  margin: 3rem 0;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+.container {
+  width: 100%;
+  margin: 2rem auto;
+}
+header {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+header .main-header {
+  width: 50%;
+  margin-left: 9rem;
+}
+header .main-header h1 {
+  font-size: 6rem;
+  font-family: 'Pacifico', cursive;
+  color: #E83556;
+  margin-top: 10px;
+}
+header .main-header h2 {
+  font-size: 2.5rem;
+  margin: 2rem;
+}
+header .navbar {
+  width: 50%;
+}
+header .navbar .nav-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+header .navbar .nav-links .nav-item {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #4D4D4D;
+}
+header .navbar .nav-links .nav-item:hover {
+  color: #61D0D4;
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+}
+main .self-portrait img {
+  width: 30rem;
+  border-radius: 50%;
+}
+main .biography {
+  margin: 3rem;
+}
+main .biography h2 {
+  font-size: 8.5rem;
+  color: #4D4D4D;
+}
+main .biography h3 {
+  font-size: 5rem;
+  color: #4D4D4D;
+}
+main .biography .links {
+  display: flex;
+  font-size: 1.5rem;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+main .biography .links #resume {
+  background-color: #E83556;
+  padding: 4rem;
+  border-radius: 50%;
+  color: #ffffff;
+  margin: 1rem;
+  font-weight: bold;
+}
+main .biography .links #work {
+  background-color: #61D0D4;
+  padding: 4rem;
+  border-radius: 50%;
+  color: #ffffff;
+  margin: 1rem;
+  font-weight: bold;
+}
+main .biography .links #skills {
+  background-color: #D1C926;
+  padding: 4rem;
+  border-radius: 50%;
+  color: #ffffff;
+  margin: 1rem;
+  font-weight: bold;
+}
+section {
+  display: flex;
+}
+section .resume {
+  width: 80%;
+}
+section .resume .title h2 {
+  font-size: 6rem;
+  color: #4D4D4D;
+  margin: 4rem 0 0 20rem;
+}
+section .resume .professional-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .resume .professional-info .info-title {
+  padding: 5rem;
+  border-radius: 50%;
+  color: #ffffff;
+  margin: 2rem;
+  font-weight: bold;
+  background-color: #61D0D4;
+  font-size: 1.5rem;
+}
+section .resume .professional-info .paragraph {
+  font-size: 1.5rem;
+  width: 45rem;
+}
+section .resume .work-experience {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .resume .work-experience .work-title {
+  padding: 5rem;
+  border-radius: 50%;
+  color: #ffffff;
+  margin: 2rem;
+  font-weight: bold;
+  background-color: #61D0D4;
+  font-size: 1.5rem;
+}
+section .resume .work-experience .work-info {
+  font-size: 1.5rem;
+  width: 45rem;
+}
+section .resume .work-experience .work-info .jop-position h4 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+section .resume .work-experience .work-info .jop-position h5 {
+  font-size: 1.8rem;
+  margin: 1rem 0;
+}
+section .resume .education {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .resume .education .education-title {
+  padding: 5rem;
+  border-radius: 50%;
+  color: #ffffff;
+  margin: 2rem;
+  font-weight: bold;
+  background-color: #61D0D4;
+  font-size: 1.5rem;
+}
+section .resume .education .schools {
+  font-size: 1.5rem;
+  width: 45rem;
+}
+section .resume .education .schools .school-info h4 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+section .resume .education .schools .school-info h5 {
+  font-size: 1.8rem;
+  margin: 1rem 0;
+}
+section .resume-skills .skills-title h3 {
+  font-size: 5.5rem;
+  color: #D1C926;
+  margin: 4rem 0;
+}
+section .resume-skills .Skills-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+section .resume-skills .Skills-list .skill-icon {
+  font-size: 6rem;
+  margin: 2rem 0;
+  color: #E83556;
+}
+section .resume-skills .Skills-list h5 {
+  font-size: 1.8rem;
+}
+footer {
+  background-color: #E83556;
+  color: #F2EBEC;
+  padding: 3rem;
+  margin: 7rem 0 0 0;
+  bottom: 0;
+}
+footer .footer-info {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.8rem;
+}
+footer .footer-info .icon {
+  display: flex;
+  font-size: 2.5rem;
+  justify-content: space-between;
+  margin: 0.5rem 0 1rem 0;
+}
+footer .footer-info .icon:hover {
+  color: #61D0D4;
 }
