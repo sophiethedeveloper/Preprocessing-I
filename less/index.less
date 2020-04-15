@@ -100,7 +100,7 @@ html, body {
 hr {
 	border: 0;
 	height: 1px;
-	width: 80rem;
+	width: 100rem;
 	margin: 3rem 0;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
@@ -190,6 +190,10 @@ main {
 			justify-content: space-between;
 			margin-top: 2rem;
 			
+			a {
+				text-decoration: none;
+				color: #ffffff;
+			}
 			#resume {
 				background-color: @magenta;
 				.middle-circles();
@@ -323,13 +327,85 @@ section {
 	}
 }
 
+// Contact Section
 
+.contact-page {
+	.flex();
+	justify-content: center;
 
+	.contact-section {
+		width: 50%;
 
+		.contact-title {
+			h2 {
+				font-size: 6rem;
+				color: @headingColor;
+				margin: 4rem 0 0 20rem;
+			}
+		}
 
+		.contact-icons {
+			.flex();
+			justify-content: space-evenly;
+			align-items: center;
+			font-size: 4rem;
+			color: @yellow;
+			margin: 4rem 0;
+		}
 
+		h3 {
+			.resume-flex();
+			font-size: 1.5rem;
+			color: @headingColor;
+			font-weight: bold;
+		}
+	}
 
+	.contact-form {
+		width: 50%;
+		
+		h2 {
+			font-size: 1.8rem;
+			margin: 2rem;
+			color: @headingColor;
+		}
 
+		.form {
+			.flex();
+			flex-direction: row;
+			input[type=text], select, textarea {
+				width: 80%; /* Full width */
+				padding: 1.2rem;
+				border: 1px solid @magenta;
+				color: #ffffff;
+				background-color: @magenta;
+				border-radius: 0.5rem;
+				margin: 0.5rem;
+				resize: vertical; 
+
+				&::placeholder{
+					color: #ffffff;
+				}
+			  }
+
+			  input[type=submit] {
+				display: block;
+				background-color: @lightBlue;
+				color: white;
+				padding: 1.2rem 2rem;
+				border: 0.1rem solid @lightBlue;
+				border-radius: 4px;
+				margin: 1rem 0;
+				cursor: pointer;
+
+				&:hover {
+					background-color: @headingColor;
+				}
+			  }
+		}
+	}
+
+}
 
 
 
