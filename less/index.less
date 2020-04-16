@@ -180,7 +180,7 @@ hr {
 				width: 100%;
 				.nav-links {
 					.flex();
-					justify-content: center;
+					justify-content: space-evenly;
 					align-items: center;
 				}
 			}
@@ -244,6 +244,35 @@ hr {
 				}
 			}
 		}
+
+		@media(max-width: 500px){
+			.flex();
+			flex-direction: column;
+
+			.self-portrait {
+
+				img {
+					width: 25rem;
+					margin: 1rem 0;
+				}
+			}
+
+			.biography {
+				.flex();
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+
+				h2 {
+					font-size: 6rem;
+					margin: 1.5rem 0;
+				}
+
+				h3 {
+					font-size: 4rem;
+				}
+			}
+		}
 	}
 
 	// Resume Section
@@ -253,9 +282,6 @@ hr {
 
 		.resume{
 			width: 80%;
-			// .flex();
-			// flex-direction: column;
-			// justify-content: center;
 
 			.title {
 				h2 {
@@ -303,7 +329,6 @@ hr {
 						}
 
 						h5 {
-							font-size: 1.8rem;
 							margin: 1rem 0;
 						}
 					}
@@ -318,8 +343,10 @@ hr {
 				}
 
 				.schools {
-					font-size: 1.5rem;
+					// font-size: 1.5rem;
 					width: 45rem;
+					color: @headingColor;
+
 
 					.school-info {
 						h4 {
@@ -332,6 +359,11 @@ hr {
 							font-size: 1.8rem;
 							margin: 1rem 0;
 						}
+
+						p {
+							font-size: 1.8rem;
+						}
+						
 					}
 				}
 			}
@@ -359,6 +391,66 @@ hr {
 
 				h5 {
 					font-size: 1.8rem;
+				}
+			}
+		}
+
+		@media(max-width: 500px){
+			.flex();
+			flex-direction: column;
+			width: 50rem;
+
+			 hr {
+				width: 49rem;
+			 }
+			.resume {
+				width: 100%;
+
+				.title {
+					
+					h2 {
+						font-size: 4rem;
+					}
+				}
+
+				.professional-info {
+					.flex();
+					flex-direction: column;
+					
+					.paragraph {
+						width: 40rem;
+					}
+				}
+
+				.work-experience {
+					.flex();
+					flex-direction: column;
+
+					.work-info {
+						width: 40rem;
+					}
+				}
+
+				.education {
+					.flex();
+					flex-direction: column;
+
+					.schools{
+						width: 40rem;
+					}
+				}
+			}
+
+			.resume-skills {
+				.skills-title{
+					.flex();
+					justify-content: center;
+					align-items: center;
+
+					h3 {
+						font-size: 4.5rem;
+						margin: 2.5rem 0;
+					}
 				}
 			}
 		}
@@ -408,6 +500,52 @@ hr {
 				}
 			}
 			
+		}
+
+		@media(max-width: 500px){
+			width: 50rem;
+
+			hr {
+				width: 49rem;
+			}
+			
+			.project-title {
+				h2 {
+					font-size: 4.5rem;
+					margin: 4rem 0 1rem 0;
+				}
+			}
+
+			.project-list {
+				
+				.project-display {
+					.flex();
+					flex-direction: column;
+
+					.project-img {
+				
+						img {
+							width: 40rem;
+						}
+					}
+
+					.project-description {
+						.flex();
+						flex-direction: column;
+						justify-content: center;
+						align-items: center;
+						width: 80%;
+						
+						h3 {
+						
+							width: 15rem;
+						}
+						p {
+							font-size: 1.6rem;
+						}
+					}
+				}
+			}
 		}
 	}
 
@@ -490,6 +628,39 @@ hr {
 			}
 		}
 
+		@media(max-width: 500px){
+			width: 50rem;
+			.flex();
+			flex-direction: column;
+			justify-content: center;
+
+			.contact-section {
+				width: 100%;
+
+				.contact-title {
+					h2 {
+						font-size: 4rem;
+						margin: 4rem 0 0 15rem;
+					}
+				}
+			}
+			.contact-form {
+				width: 100%;
+
+				h2 {
+					.flex();
+					justify-content: center;
+					margin: 4rem;
+				}
+
+				.form {
+					margin: 0 10rem;
+				}
+			}
+
+			
+		}
+
 	}
 	// footer code
 	footer {
@@ -501,9 +672,6 @@ hr {
 		// position: absolute;
 		bottom: 0;
 		left: 0;
-		
-		
-		
 		
 		.footer-info {
 			.flex();
@@ -519,6 +687,30 @@ hr {
 				&:hover{
 					color: @lightBlue;
 				}
+			}
+		}
+
+		@media(max-width: 500px){
+			width: 50rem;
+
+			.footer-info{
+				.flex();
+				flex-direction: column;
+
+				.Social-media{
+					display: none;
+				}
+
+				.copyright {
+					margin: 2rem 0 1rem 0;
+				}
+				.icon {
+					.flex();
+					flex-flow: column;
+					justify-content: space-around;
+				}
+
+				
 			}
 		}
 	}

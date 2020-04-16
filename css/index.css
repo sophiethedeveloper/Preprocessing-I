@@ -235,7 +235,7 @@ hr {
   }
   .container header .navbar .nav-links {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
   }
 }
@@ -295,6 +295,29 @@ hr {
   margin: 1rem;
   font-weight: bold;
 }
+@media (max-width: 500px) {
+  .container main {
+    display: flex;
+    flex-direction: column;
+  }
+  .container main .self-portrait img {
+    width: 25rem;
+    margin: 1rem 0;
+  }
+  .container main .biography {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .container main .biography h2 {
+    font-size: 6rem;
+    margin: 1.5rem 0;
+  }
+  .container main .biography h3 {
+    font-size: 4rem;
+  }
+}
 .container section {
   display: flex;
 }
@@ -351,7 +374,6 @@ hr {
   margin: 1rem 0;
 }
 .container section .resume .work-experience .work-info .jop-position h5 {
-  font-size: 1.8rem;
   margin: 1rem 0;
 }
 .container section .resume .education {
@@ -369,8 +391,8 @@ hr {
   font-size: 1.5rem;
 }
 .container section .resume .education .schools {
-  font-size: 1.5rem;
   width: 45rem;
+  color: #4D4D4D;
 }
 .container section .resume .education .schools .school-info h4 {
   font-size: 2rem;
@@ -380,6 +402,9 @@ hr {
 .container section .resume .education .schools .school-info h5 {
   font-size: 1.8rem;
   margin: 1rem 0;
+}
+.container section .resume .education .schools .school-info p {
+  font-size: 1.8rem;
 }
 .container section .resume-skills .skills-title h3 {
   font-size: 5.5rem;
@@ -399,6 +424,52 @@ hr {
 }
 .container section .resume-skills .Skills-list h5 {
   font-size: 1.8rem;
+}
+@media (max-width: 500px) {
+  .container section {
+    display: flex;
+    flex-direction: column;
+    width: 50rem;
+  }
+  .container section hr {
+    width: 49rem;
+  }
+  .container section .resume {
+    width: 100%;
+  }
+  .container section .resume .title h2 {
+    font-size: 4rem;
+  }
+  .container section .resume .professional-info {
+    display: flex;
+    flex-direction: column;
+  }
+  .container section .resume .professional-info .paragraph {
+    width: 40rem;
+  }
+  .container section .resume .work-experience {
+    display: flex;
+    flex-direction: column;
+  }
+  .container section .resume .work-experience .work-info {
+    width: 40rem;
+  }
+  .container section .resume .education {
+    display: flex;
+    flex-direction: column;
+  }
+  .container section .resume .education .schools {
+    width: 40rem;
+  }
+  .container section .resume-skills .skills-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container section .resume-skills .skills-title h3 {
+    font-size: 4.5rem;
+    margin: 2.5rem 0;
+  }
 }
 .container .project-section {
   display: flex;
@@ -447,6 +518,38 @@ hr {
 .container .project-section .project-list .project-display .project-description p {
   font-size: 1.8rem;
   color: #4D4D4D;
+}
+@media (max-width: 500px) {
+  .container .project-section {
+    width: 50rem;
+  }
+  .container .project-section hr {
+    width: 49rem;
+  }
+  .container .project-section .project-title h2 {
+    font-size: 4.5rem;
+    margin: 4rem 0 1rem 0;
+  }
+  .container .project-section .project-list .project-display {
+    display: flex;
+    flex-direction: column;
+  }
+  .container .project-section .project-list .project-display .project-img img {
+    width: 40rem;
+  }
+  .container .project-section .project-list .project-display .project-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+  }
+  .container .project-section .project-list .project-display .project-description h3 {
+    width: 15rem;
+  }
+  .container .project-section .project-list .project-display .project-description p {
+    font-size: 1.6rem;
+  }
 }
 .container .contact-page {
   display: flex;
@@ -520,6 +623,32 @@ hr {
 .container .contact-page .contact-form .form input[type=submit]:hover {
   background-color: #4D4D4D;
 }
+@media (max-width: 500px) {
+  .container .contact-page {
+    width: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .container .contact-page .contact-section {
+    width: 100%;
+  }
+  .container .contact-page .contact-section .contact-title h2 {
+    font-size: 4rem;
+    margin: 4rem 0 0 15rem;
+  }
+  .container .contact-page .contact-form {
+    width: 100%;
+  }
+  .container .contact-page .contact-form h2 {
+    display: flex;
+    justify-content: center;
+    margin: 4rem;
+  }
+  .container .contact-page .contact-form .form {
+    margin: 0 10rem;
+  }
+}
 .container footer {
   width: 100%;
   background-color: #E83556;
@@ -542,4 +671,24 @@ hr {
 }
 .container footer .footer-info .icon:hover {
   color: #61D0D4;
+}
+@media (max-width: 500px) {
+  .container footer {
+    width: 50rem;
+  }
+  .container footer .footer-info {
+    display: flex;
+    flex-direction: column;
+  }
+  .container footer .footer-info .Social-media {
+    display: none;
+  }
+  .container footer .footer-info .copyright {
+    margin: 2rem 0 1rem 0;
+  }
+  .container footer .footer-info .icon {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+  }
 }
