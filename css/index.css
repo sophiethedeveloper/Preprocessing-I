@@ -1,1 +1,545 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-size: 62.5%;
+  background-color: #F2EBEC;
+}
+.flex {
+  display: flex;
+}
+.resume-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.headingFont {
+  font-family: 'Pacifico', cursive;
+}
+.middle-circles {
+  padding: 4rem;
+  border-radius: 50%;
+  color: #ffffff;
+  margin: 1rem;
+  font-weight: bold;
+}
+.resume-circles {
+  padding: 5rem;
+  border-radius: 50%;
+  color: #ffffff;
+  margin: 2rem;
+  font-weight: bold;
+  background-color: #61D0D4;
+  font-size: 1.5rem;
+}
+.project-circles {
+  padding: 3rem;
+  border-radius: 50%;
+  color: #ffffff;
+  margin: 2rem;
+  font-weight: bold;
+  background-color: #D1C926;
+  font-size: 1.5rem;
+  text-align: center;
+}
+hr {
+  border: 0;
+  height: 1px;
+  width: 100rem;
+  margin: 3rem 0;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  position: relative;
+}
+.container header {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+.container header .main-header {
+  width: 50%;
+  margin-left: 9rem;
+}
+.container header .main-header h1 {
+  font-size: 6rem;
+  font-family: 'Pacifico', cursive;
+  color: #E83556;
+  margin-top: 10px;
+}
+.container header .main-header h2 {
+  font-size: 2.5rem;
+  margin: 2rem;
+}
+.container header .navbar {
+  width: 50%;
+}
+.container header .navbar .nav-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+.container header .navbar .nav-links .nav-item {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #4D4D4D;
+}
+.container header .navbar .nav-links .nav-item:hover {
+  color: #61D0D4;
+}
+@media (max-width: 500px) {
+  .container header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .container header .main-header {
+    width: 100%;
+  }
+  .container header .navbar {
+    width: 100%;
+  }
+  .container header .navbar .nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.container main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+  margin-bottom: 30rem;
+}
+.container main .self-portrait img {
+  width: 30rem;
+  border-radius: 50%;
+}
+.container main .biography {
+  margin: 3rem;
+}
+.container main .biography h2 {
+  font-size: 8.5rem;
+  color: #4D4D4D;
+}
+.container main .biography h3 {
+  font-size: 5rem;
+  color: #4D4D4D;
+}
+.container main .biography .links {
+  display: flex;
+  font-size: 1.5rem;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.container main .biography .links a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.container main .biography .links #resume {
+  background-color: #E83556;
+  padding: 4rem;
+  border-radius: 50%;
+  color: #ffffff;
+  margin: 1rem;
+  font-weight: bold;
+}
+.container main .biography .links #work {
+  background-color: #61D0D4;
+  padding: 4rem;
+  border-radius: 50%;
+  color: #ffffff;
+  margin: 1rem;
+  font-weight: bold;
+}
+.container main .biography .links #skills {
+  background-color: #D1C926;
+  padding: 4rem;
+  border-radius: 50%;
+  color: #ffffff;
+  margin: 1rem;
+  font-weight: bold;
+}
+.container section {
+  display: flex;
+}
+.container section .resume {
+  width: 80%;
+}
+.container section .resume .title h2 {
+  font-size: 6rem;
+  color: #4D4D4D;
+  margin: 4rem 0 0 20rem;
+}
+.container section .resume .professional-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container section .resume .professional-info .info-title {
+  padding: 5rem;
+  border-radius: 50%;
+  color: #ffffff;
+  margin: 2rem;
+  font-weight: bold;
+  background-color: #61D0D4;
+  font-size: 1.5rem;
+}
+.container section .resume .professional-info .paragraph {
+  font-size: 1.8rem;
+  width: 45rem;
+  line-height: 2rem;
+  color: #4D4D4D;
+}
+.container section .resume .work-experience {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container section .resume .work-experience .work-title {
+  padding: 5rem;
+  border-radius: 50%;
+  color: #ffffff;
+  margin: 2rem;
+  font-weight: bold;
+  background-color: #61D0D4;
+  font-size: 1.5rem;
+}
+.container section .resume .work-experience .work-info {
+  font-size: 1.8rem;
+  width: 45rem;
+  color: #4D4D4D;
+}
+.container section .resume .work-experience .work-info .jop-position h4 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+.container section .resume .work-experience .work-info .jop-position h5 {
+  font-size: 1.8rem;
+  margin: 1rem 0;
+}
+.container section .resume .education {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container section .resume .education .education-title {
+  padding: 5rem;
+  border-radius: 50%;
+  color: #ffffff;
+  margin: 2rem;
+  font-weight: bold;
+  background-color: #61D0D4;
+  font-size: 1.5rem;
+}
+.container section .resume .education .schools {
+  font-size: 1.5rem;
+  width: 45rem;
+}
+.container section .resume .education .schools .school-info h4 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+.container section .resume .education .schools .school-info h5 {
+  font-size: 1.8rem;
+  margin: 1rem 0;
+}
+.container section .resume-skills .skills-title h3 {
+  font-size: 5.5rem;
+  color: #D1C926;
+  margin: 4rem 0;
+}
+.container section .resume-skills .Skills-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container section .resume-skills .Skills-list .skill-icon {
+  font-size: 6rem;
+  margin: 2rem 0;
+  color: #E83556;
+}
+.container section .resume-skills .Skills-list h5 {
+  font-size: 1.8rem;
+}
+.container .project-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container .project-section .project-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.container .project-section .project-title h2 {
+  font-size: 6rem;
+  color: #4D4D4D;
+}
+.container .project-section .project-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.container .project-section .project-list .project-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .project-section .project-list .project-display .project-img img {
+  width: 50rem;
+  margin: 2rem;
+}
+.container .project-section .project-list .project-display .project-description {
+  width: 20%;
+}
+.container .project-section .project-list .project-display .project-description h3 {
+  padding: 3rem;
+  border-radius: 50%;
+  color: #ffffff;
+  margin: 2rem;
+  font-weight: bold;
+  background-color: #D1C926;
+  font-size: 1.5rem;
+  text-align: center;
+  width: 20rem;
+}
+.container .project-section .project-list .project-display .project-description p {
+  font-size: 1.8rem;
+  color: #4D4D4D;
+}
+.container .contact-page {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25rem;
+}
+.container .contact-page .contact-section {
+  width: 50%;
+}
+.container .contact-page .contact-section .contact-title h2 {
+  font-size: 6rem;
+  color: #4D4D4D;
+  margin: 4rem 0 0 20rem;
+}
+.container .contact-page .contact-section .contact-icons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 4rem;
+  color: #D1C926;
+  margin: 4rem 0;
+}
+.container .contact-page .contact-section h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: #4D4D4D;
+  font-weight: bold;
+}
+.container .contact-page .contact-form {
+  width: 50%;
+}
+.container .contact-page .contact-form h2 {
+  font-size: 1.8rem;
+  margin: 2rem;
+  color: #4D4D4D;
+}
+.container .contact-page .contact-form .form {
+  display: flex;
+  flex-direction: row;
+}
+.container .contact-page .contact-form .form input[type=text],
+.container .contact-page .contact-form .form select,
+.container .contact-page .contact-form .form textarea {
+  width: 80%;
+  /* Full width */
+  padding: 1.2rem;
+  border: 1px solid #E83556;
+  color: #ffffff;
+  background-color: #E83556;
+  border-radius: 0.5rem;
+  margin: 0.5rem;
+  resize: vertical;
+}
+.container .contact-page .contact-form .form input[type=text]::placeholder,
+.container .contact-page .contact-form .form select::placeholder,
+.container .contact-page .contact-form .form textarea::placeholder {
+  color: #ffffff;
+}
+.container .contact-page .contact-form .form input[type=submit] {
+  display: block;
+  background-color: #61D0D4;
+  color: white;
+  padding: 1.2rem 2rem;
+  border: 0.1rem solid #61D0D4;
+  border-radius: 4px;
+  margin: 1rem 0;
+  cursor: pointer;
+}
+.container .contact-page .contact-form .form input[type=submit]:hover {
+  background-color: #4D4D4D;
+}
+.container footer {
+  width: 100%;
+  background-color: #E83556;
+  color: #f2ebec;
+  padding: 3rem;
+  margin: 7rem 0 0 0;
+  bottom: 0;
+  left: 0;
+}
+.container footer .footer-info {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.8rem;
+}
+.container footer .footer-info .icon {
+  display: flex;
+  font-size: 2.5rem;
+  justify-content: space-between;
+  margin: 0.5rem 0 1rem 0;
+}
+.container footer .footer-info .icon:hover {
+  color: #61D0D4;
+}
