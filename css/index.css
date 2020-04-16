@@ -182,75 +182,96 @@ hr {
 }
 .container {
   width: 100%;
-  margin: 2rem auto;
+  height: 100vh;
+  margin: 0 auto;
+  position: relative;
 }
-header {
+.container header {
   width: 80%;
   display: flex;
   justify-content: center;
 }
-header .main-header {
+.container header .main-header {
   width: 50%;
   margin-left: 9rem;
 }
-header .main-header h1 {
+.container header .main-header h1 {
   font-size: 6rem;
   font-family: 'Pacifico', cursive;
   color: #E83556;
   margin-top: 10px;
 }
-header .main-header h2 {
+.container header .main-header h2 {
   font-size: 2.5rem;
   margin: 2rem;
 }
-header .navbar {
+.container header .navbar {
   width: 50%;
 }
-header .navbar .nav-links {
+.container header .navbar .nav-links {
   display: flex;
   justify-content: space-between;
   margin-top: 3rem;
 }
-header .navbar .nav-links .nav-item {
+.container header .navbar .nav-links .nav-item {
   font-size: 2rem;
   text-decoration: none;
   color: #4D4D4D;
 }
-header .navbar .nav-links .nav-item:hover {
+.container header .navbar .nav-links .nav-item:hover {
   color: #61D0D4;
 }
-main {
+@media (max-width: 500px) {
+  .container header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .container header .main-header {
+    width: 100%;
+  }
+  .container header .navbar {
+    width: 100%;
+  }
+  .container header .navbar .nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.container main {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 4rem;
+  margin-bottom: 30rem;
 }
-main .self-portrait img {
+.container main .self-portrait img {
   width: 30rem;
   border-radius: 50%;
 }
-main .biography {
+.container main .biography {
   margin: 3rem;
 }
-main .biography h2 {
+.container main .biography h2 {
   font-size: 8.5rem;
   color: #4D4D4D;
 }
-main .biography h3 {
+.container main .biography h3 {
   font-size: 5rem;
   color: #4D4D4D;
 }
-main .biography .links {
+.container main .biography .links {
   display: flex;
   font-size: 1.5rem;
   justify-content: space-between;
   margin-top: 2rem;
 }
-main .biography .links a {
+.container main .biography .links a {
   text-decoration: none;
   color: #ffffff;
 }
-main .biography .links #resume {
+.container main .biography .links #resume {
   background-color: #E83556;
   padding: 4rem;
   border-radius: 50%;
@@ -258,7 +279,7 @@ main .biography .links #resume {
   margin: 1rem;
   font-weight: bold;
 }
-main .biography .links #work {
+.container main .biography .links #work {
   background-color: #61D0D4;
   padding: 4rem;
   border-radius: 50%;
@@ -266,7 +287,7 @@ main .biography .links #work {
   margin: 1rem;
   font-weight: bold;
 }
-main .biography .links #skills {
+.container main .biography .links #skills {
   background-color: #D1C926;
   padding: 4rem;
   border-radius: 50%;
@@ -274,23 +295,23 @@ main .biography .links #skills {
   margin: 1rem;
   font-weight: bold;
 }
-section {
+.container section {
   display: flex;
 }
-section .resume {
+.container section .resume {
   width: 80%;
 }
-section .resume .title h2 {
+.container section .resume .title h2 {
   font-size: 6rem;
   color: #4D4D4D;
   margin: 4rem 0 0 20rem;
 }
-section .resume .professional-info {
+.container section .resume .professional-info {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-section .resume .professional-info .info-title {
+.container section .resume .professional-info .info-title {
   padding: 5rem;
   border-radius: 50%;
   color: #ffffff;
@@ -299,16 +320,18 @@ section .resume .professional-info .info-title {
   background-color: #61D0D4;
   font-size: 1.5rem;
 }
-section .resume .professional-info .paragraph {
-  font-size: 1.5rem;
+.container section .resume .professional-info .paragraph {
+  font-size: 1.8rem;
   width: 45rem;
+  line-height: 2rem;
+  color: #4D4D4D;
 }
-section .resume .work-experience {
+.container section .resume .work-experience {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-section .resume .work-experience .work-title {
+.container section .resume .work-experience .work-title {
   padding: 5rem;
   border-radius: 50%;
   color: #ffffff;
@@ -317,25 +340,26 @@ section .resume .work-experience .work-title {
   background-color: #61D0D4;
   font-size: 1.5rem;
 }
-section .resume .work-experience .work-info {
-  font-size: 1.5rem;
+.container section .resume .work-experience .work-info {
+  font-size: 1.8rem;
   width: 45rem;
+  color: #4D4D4D;
 }
-section .resume .work-experience .work-info .jop-position h4 {
+.container section .resume .work-experience .work-info .jop-position h4 {
   font-size: 2rem;
   font-weight: bold;
   margin: 1rem 0;
 }
-section .resume .work-experience .work-info .jop-position h5 {
+.container section .resume .work-experience .work-info .jop-position h5 {
   font-size: 1.8rem;
   margin: 1rem 0;
 }
-section .resume .education {
+.container section .resume .education {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-section .resume .education .education-title {
+.container section .resume .education .education-title {
   padding: 5rem;
   border-radius: 50%;
   color: #ffffff;
@@ -344,72 +368,72 @@ section .resume .education .education-title {
   background-color: #61D0D4;
   font-size: 1.5rem;
 }
-section .resume .education .schools {
+.container section .resume .education .schools {
   font-size: 1.5rem;
   width: 45rem;
 }
-section .resume .education .schools .school-info h4 {
+.container section .resume .education .schools .school-info h4 {
   font-size: 2rem;
   font-weight: bold;
   margin: 1rem 0;
 }
-section .resume .education .schools .school-info h5 {
+.container section .resume .education .schools .school-info h5 {
   font-size: 1.8rem;
   margin: 1rem 0;
 }
-section .resume-skills .skills-title h3 {
+.container section .resume-skills .skills-title h3 {
   font-size: 5.5rem;
   color: #D1C926;
   margin: 4rem 0;
 }
-section .resume-skills .Skills-list {
+.container section .resume-skills .Skills-list {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-section .resume-skills .Skills-list .skill-icon {
+.container section .resume-skills .Skills-list .skill-icon {
   font-size: 6rem;
   margin: 2rem 0;
   color: #E83556;
 }
-section .resume-skills .Skills-list h5 {
+.container section .resume-skills .Skills-list h5 {
   font-size: 1.8rem;
 }
-.project-section {
+.container .project-section {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.project-section .project-title {
+.container .project-section .project-title {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
 }
-.project-section .project-title h2 {
+.container .project-section .project-title h2 {
   font-size: 6rem;
   color: #4D4D4D;
 }
-.project-section .project-list {
+.container .project-section .project-list {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
-.project-section .project-list .project-display {
+.container .project-section .project-list .project-display {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.project-section .project-list .project-display .project-img img {
+.container .project-section .project-list .project-display .project-img img {
   width: 50rem;
   margin: 2rem;
 }
-.project-section .project-list .project-display .project-description {
+.container .project-section .project-list .project-display .project-description {
   width: 20%;
 }
-.project-section .project-list .project-display .project-description h3 {
+.container .project-section .project-list .project-display .project-description h3 {
   padding: 3rem;
   border-radius: 50%;
   color: #ffffff;
@@ -420,23 +444,24 @@ section .resume-skills .Skills-list h5 {
   text-align: center;
   width: 20rem;
 }
-.project-section .project-list .project-display .project-description p {
+.container .project-section .project-list .project-display .project-description p {
   font-size: 1.8rem;
   color: #4D4D4D;
 }
-.contact-page {
+.container .contact-page {
   display: flex;
   justify-content: center;
+  margin-bottom: 25rem;
 }
-.contact-page .contact-section {
+.container .contact-page .contact-section {
   width: 50%;
 }
-.contact-page .contact-section .contact-title h2 {
+.container .contact-page .contact-section .contact-title h2 {
   font-size: 6rem;
   color: #4D4D4D;
   margin: 4rem 0 0 20rem;
 }
-.contact-page .contact-section .contact-icons {
+.container .contact-page .contact-section .contact-icons {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -444,7 +469,7 @@ section .resume-skills .Skills-list h5 {
   color: #D1C926;
   margin: 4rem 0;
 }
-.contact-page .contact-section h3 {
+.container .contact-page .contact-section h3 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -452,21 +477,21 @@ section .resume-skills .Skills-list h5 {
   color: #4D4D4D;
   font-weight: bold;
 }
-.contact-page .contact-form {
+.container .contact-page .contact-form {
   width: 50%;
 }
-.contact-page .contact-form h2 {
+.container .contact-page .contact-form h2 {
   font-size: 1.8rem;
   margin: 2rem;
   color: #4D4D4D;
 }
-.contact-page .contact-form .form {
+.container .contact-page .contact-form .form {
   display: flex;
   flex-direction: row;
 }
-.contact-page .contact-form .form input[type=text],
-.contact-page .contact-form .form select,
-.contact-page .contact-form .form textarea {
+.container .contact-page .contact-form .form input[type=text],
+.container .contact-page .contact-form .form select,
+.container .contact-page .contact-form .form textarea {
   width: 80%;
   /* Full width */
   padding: 1.2rem;
@@ -477,12 +502,12 @@ section .resume-skills .Skills-list h5 {
   margin: 0.5rem;
   resize: vertical;
 }
-.contact-page .contact-form .form input[type=text]::placeholder,
-.contact-page .contact-form .form select::placeholder,
-.contact-page .contact-form .form textarea::placeholder {
+.container .contact-page .contact-form .form input[type=text]::placeholder,
+.container .contact-page .contact-form .form select::placeholder,
+.container .contact-page .contact-form .form textarea::placeholder {
   color: #ffffff;
 }
-.contact-page .contact-form .form input[type=submit] {
+.container .contact-page .contact-form .form input[type=submit] {
   display: block;
   background-color: #61D0D4;
   color: white;
@@ -492,27 +517,29 @@ section .resume-skills .Skills-list h5 {
   margin: 1rem 0;
   cursor: pointer;
 }
-.contact-page .contact-form .form input[type=submit]:hover {
+.container .contact-page .contact-form .form input[type=submit]:hover {
   background-color: #4D4D4D;
 }
-footer {
+.container footer {
+  width: 100%;
   background-color: #E83556;
-  color: #F2EBEC;
+  color: #f2ebec;
   padding: 3rem;
   margin: 7rem 0 0 0;
   bottom: 0;
+  left: 0;
 }
-footer .footer-info {
+.container footer .footer-info {
   display: flex;
   justify-content: space-around;
   font-size: 1.8rem;
 }
-footer .footer-info .icon {
+.container footer .footer-info .icon {
   display: flex;
   font-size: 2.5rem;
   justify-content: space-between;
   margin: 0.5rem 0 1rem 0;
 }
-footer .footer-info .icon:hover {
+.container footer .footer-info .icon:hover {
   color: #61D0D4;
 }
